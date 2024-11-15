@@ -4,7 +4,9 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class jenis extends Model
+class Jenis extends Model
 {
-    protected $guarded = ["id"];
+    protected $fillable = [
+        'nama_jenis', 'kode_jenis', 'keterangan',
+    ];
 }
